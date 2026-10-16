@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<a href="{{ url_for('create_new_blog_post_form')}}" id="new-post-button" class="button-link blog-button">Create a new post</a>
+
+<h2>Your Posts</h2>
+
+{% if posts %}
+
+    {% for post in posts %}
+
+        <h3 class="post-title">{{ post.title }}</h3>
+        <p class="post-date">{{ post.post_datetime.strftime('%m %b %Y at %H:%M')}} </p>
+        <p class="post-text">{{ post.text }}</p>
+
+    {% endfor %}
+
+{% else %}
+
+    <p>No posts yet.</p>
+
+{% endif %}
+
+{% endblock %}

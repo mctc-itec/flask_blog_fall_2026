@@ -1,0 +1,15 @@
+# compiled python files 
+__pycache__
+
+# virtual environments
+venv
+
+# Editor files 
+.idea
+.vscode
+
+# Mac file created when project opened in Finder
+.DS_Store
+
+# Application's database
+posts.db
