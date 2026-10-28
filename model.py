@@ -15,6 +15,9 @@ class Post:
         if not title:  # None and empty strings are False 
             validation_errors.append('Title must be provided and not blank')
 
+        if len(title) < 2:
+            validation_errors.append('Title must be at least 2 characters')
+
         text = text.strip()
 
         if not text: 
