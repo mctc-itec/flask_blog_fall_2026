@@ -10,7 +10,7 @@
     {% for post in posts %}
 
         <h3 class="post-title">{{ post.title }}</h3>
-        <p class="post-date">{{ post.post_datetime.strftime('%m %b %Y at %H:%M')}} </p>
+        <p class="post-date">{{ post.post_datetime.strftime('%d %b %Y at %H:%M')}} </p>
         <p class="post-text">{{ post.text }}</p>
 
     {% endfor %}
