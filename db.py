@@ -3,7 +3,7 @@ from datetime import datetime
 from model import Post 
 
 database_file = 'posts.db'
-create_table_sql = 'CREATE TABLE IF NOT EXISTS posts (user_id TEXT, title TEXT, text TEXT, date INT)'
+create_table_sql = 'CREATE TABLE IF NOT EXISTS posts (user_id TEXT, title TEXT, text TEXT, date REAL)'
 insert_post_sql = 'INSERT INTO posts VALUES (?, ?, ?, ?)'
 get_all_posts_for_user_sql = 'SELECT * FROM posts WHERE user_id = ?'
 
